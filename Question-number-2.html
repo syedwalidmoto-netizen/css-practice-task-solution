@@ -1,57 +1,56 @@
-<!-- 02. Apply CSS styles to change the text color,alignment,font-size,font-family and font-style for different elements--> 
+<!--02. Apply CSS styles to set the display property to none,hidden,inline,block,and inline-block for specific elements -->
+
 
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Styled Webpage</title>
+    <title>Display Property Example</title>
 
     <style>
-        h1 {
-            color: blue;
+        .none-box {
+            display: none;
+        }
+
+        .hidden-box {
+            visibility: hidden;
+        }
+
+        .inline-text {
+            display: inline;
+            background-color: rgb(41, 108, 110);
+        }
+
+        .block-box {
+            display: block;
+            background-color: lightblue;
+            margin: 10px 0;
+        }
+
+        .inline-block-box {
+            display: inline-block;
+            width: 150px;
+            height: 80px;
+            background-color: lightgreen;
+            margin: 20px;
             text-align: center;
-            font-size: 40px;
-            font-family: Arial;
-        }
-
-        h3 {
-            color: purple;
-            text-align: left;
-            font-size: 24px;
-            font-family: Georgia;
-        }
-
-        p {
-            color: green;
-            text-align: justify;
-            font-size: 18px;
-            font-family: Verdana;
-            font-style: italic;
-        }
-
-        ul {
-            color: red;
-            font-size: 20px;
-            font-family: Courier New;
+            
         }
     </style>
 
 </head>
 <body>
 
-    <h1>Welcome to My Website</h1>
+    <h2 class="none-box">This text will not show (display:none)</h2>
 
-    <p>This is my first paragraph with style.</p>
-    <p>This is my second paragraph with style.</p>
+    <h2 class="hidden-box">This text is hidden but space remains (visibility:hidden)</h2>
 
-    <h3>My Favorite Subjects: Web design & development </h3>
+    <span class="inline-text">Inline Element 1</span>
+    <span class="inline-text">Inline Element 2</span>
 
-    <ul>
-        <li>html</li>
-        <li>css</li>
-        <li>JavaScript</li>
-        <li>Computer</li>
-        <li>English</li>
-    </ul>
+    <div class="block-box">This is a block element</div>
+
+    <div class="inline-block-box">Box 1</div>
+    <div class="inline-block-box">Box 2</div>
 
 </body>
 </html>
